@@ -1,0 +1,14 @@
+# Diretórios de build
+target/
+out/
+build/
+
+# Arquivos temporários
+*.log
+*.tmp
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+
