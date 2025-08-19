@@ -1,10 +1,12 @@
 package io.github.danilooliveira.pricing.model;
 
-public record Sku(String id) {
+import java.util.Objects;
 
-  public Sku {
-    if (id == null || id.isBlank()) {
-      throw new IllegalArgumentException("Sku id cannot be null or blank");
+public record Sku(String id) {
+    public Sku {
+        Objects.requireNonNull(id, "id");
+        if (id.isBlank()) {
+            throw new IllegalArgumentException("Sku id cannot be null or blank");
+        }
     }
-  }
 }
