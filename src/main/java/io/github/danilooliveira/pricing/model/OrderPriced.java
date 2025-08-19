@@ -2,8 +2,7 @@ package io.github.danilooliveira.pricing.model;
 
 import java.util.Objects;
 
-public record OrderPriced(
-    String orderId, Money gross, Money discount, Money net, String currency) {
+public record OrderPriced(String orderId, Money gross, Money discount, Money net, String currency) {
 
   public OrderPriced {
     Objects.requireNonNull(orderId, "orderId");
