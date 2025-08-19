@@ -5,9 +5,6 @@ set -e
 echo "▶ Spotless: formatando arquivos..."
 mvn -q -DskipTests spotless:apply
 
-# Re-adiciona mudanças formatadas ao commit
-git add -A
-
 echo "▶ Linters: Spotless check + Checkstyle..."
 # Use -DskipTests pra não rodar testes no commit
 mvn -q -DskipTests spotless:check checkstyle:check
