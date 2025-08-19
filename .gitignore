@@ -12,3 +12,7 @@ build/
 *.iml
 .vscode/
 
+# macOS system files
+.DS_Store
+*/.DS_Store
+
