@@ -26,9 +26,9 @@ class PromotionValidationTest {
 
   @Test
   void bxgyQuantitiesMustBePositive() {
-    assertThrows(IllegalArgumentException.class,
-        () -> new BuyXGetY(new Sku("X"), 0, new Sku("Y"), 1));
-    assertThrows(IllegalArgumentException.class,
-        () -> new BuyXGetY(new Sku("X"), 1, new Sku("Y"), 0));
+    assertThrows(
+        IllegalArgumentException.class, () -> new BuyXGetY(new Sku("X"), 0, new Sku("Y"), 1));
+    assertThrows(
+        IllegalArgumentException.class, () -> new BuyXGetY(new Sku("X"), 1, new Sku("Y"), 0));
   }
 }
